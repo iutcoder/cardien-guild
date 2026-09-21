@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2310201c'/%3E%3Ctext x='16' y='25' text-anchor='middle' font-family='Georgia' font-size='26' fill='%23d6b77d'%3EC%3C/text%3E%3C/svg%3E"><meta name="theme-color" content="#142521"><meta name="description" content="카르디엔 서부 변경의 세계관과 지역, 모험가들을 소개합니다.">
+<title>서부 모험가 길드 | 카르디엔 사가</title>
+<style>
+:root{--bg:#10201c;--panel:#192c26;--paper:#e9e4d5;--text:#f0eee5;--muted:#b8c2b8;--gold:#d6b77d;--line:#ffffff24;--ink:#263a31}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.8 system-ui,-apple-system,"Noto Sans KR",sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:5px}h1,h2,h3,p{margin:0}h1,h2,h3{word-break:keep-all}p{word-break:keep-all;overflow-wrap:anywhere}.wrap{max-width:1180px;margin:auto;padding:0 32px}.skip{position:fixed;top:-100px;left:20px;z-index:100;background:var(--paper);color:var(--ink);padding:10px}.skip:focus{top:12px}.top{position:sticky;top:0;z-index:10;background:#10201cf5;border-bottom:1px solid var(--line)}.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:84px}.brand{font-family:Georgia,serif;font-size:22px;letter-spacing:.06em;color:var(--gold)}.brand small{display:block;color:var(--muted);font:12px/1.2 system-ui;letter-spacing:.15em}.menu{display:flex;gap:32px;font-size:15px}.menu a{padding:10px 0}.menu a:hover{color:var(--gold)}.hero{padding:75px 0 60px;border-bottom:1px solid var(--line)}.hero-inner{display:grid;grid-template-columns:1.6fr 1fr;gap:70px;align-items:center}.eyebrow{font:13px/1.5 Georgia,serif;letter-spacing:.18em;color:var(--gold);text-transform:uppercase}.hero h1{font-family:Georgia,"Noto Serif KR",serif;font-size:clamp(44px,6vw,72px);font-weight:500;letter-spacing:-.055em;line-height:1.22;margin:20px 0 24px}.hero h1 span{color:var(--gold)}.hero .intro{color:var(--muted);max-width:530px}.hero .jump{display:inline-block;margin-top:28px;border-bottom:1px solid var(--gold);color:var(--gold);padding:6px 0}.ledger{border:1px solid #d6b77d66;padding:28px;background:var(--panel)}.ledger .eyebrow{border-bottom:1px solid var(--line);padding-bottom:18px}.ledger h2{font-size:22px;font-weight:500;margin:20px 0}.ledger dl{margin:0}.ledger dl div{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding:12px 0;font-size:14px}.ledger dt{color:var(--muted)}.ledger dd{margin:0;text-align:right}.ledger .foot{margin-top:24px;font-size:14px;color:var(--muted)}.hero-banner{width:100%;aspect-ratio:1216/384;object-fit:cover;margin-top:40px;display:block}.section{padding:72px 0}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:36px;margin-bottom:32px}.section-title{display:flex;gap:18px;align-items:baseline}.number{font:italic 25px Georgia,serif;color:var(--gold)}h2{font-size:32px;letter-spacing:-.045em;font-weight:600}.section-head>p{font-size:15px;color:var(--muted);max-width:420px}.world-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.world-card{border-top:1px solid var(--gold);padding-top:24px}.world-card .small{font:12px Georgia,serif;letter-spacing:.15em;color:var(--gold)}.world-card h3{font-size:21px;margin:12px 0}.world-card p{color:var(--muted)}.paper{background:var(--paper);color:var(--ink)}.paper .number{color:#816133}.paper .section-head>p{color:#526055}.region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.region{border:1px solid #263a3133;background:#ffffff2e;overflow:hidden}.region-body{padding:24px}.region .direction{font-size:13px;letter-spacing:.08em;color:#715932}.region h3{font-size:23px;margin:7px 0 10px}.region p{color:#4b5b50}.region img{width:100%;aspect-ratio:1216/384;object-fit:cover;display:block}.note{margin-top:24px;font-size:14px;color:#59665b}.party-controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}.party-controls button{border:1px solid var(--line);background:transparent;color:var(--muted);padding:10px 22px;min-height:48px}.party-controls button[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:#15251e}.party-intro{display:flex;justify-content:space-between;align-items:baseline;gap:28px;margin-bottom:24px}.party-intro h3{font-size:25px}.party-intro p{color:var(--muted);font-size:15px;max-width:630px}.characters{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.character{background:var(--panel);border:1px solid var(--line);overflow:hidden}.portrait{height:260px;display:flex;align-items:center;justify-content:center;background:#22392f;border-bottom:1px solid var(--line);position:relative}.portrait .initial{font-family:Georgia,"Noto Serif KR",serif;font-size:80px;color:#c4b68e70;font-weight:300}.portrait .entry{position:absolute;left:20px;top:16px;font:12px Georgia,serif;letter-spacing:.12em;color:var(--muted)}.portrait img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.character-body{padding:23px}.character .meta{font-size:14px;color:var(--gold);min-height:25px}.character h3{font-size:25px;margin:6px 0 12px}.character p{color:var(--muted);min-height:86px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}.tag{font-size:14px;color:#d8dfd4;border:1px solid var(--line);padding:2px 9px}.footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:14px}.footer-inner{display:flex;justify-content:space-between;gap:20px}.footer b{color:var(--gold);font-weight:500}.draft{font-size:12px;border:1px solid #d6b77d66;color:var(--gold);padding:3px 8px;letter-spacing:.05em;margin-left:12px;vertical-align:middle}.empty-profile{font-style:italic}noscript{display:block;padding:24px;background:var(--paper);color:var(--ink)}
+@media(min-width:1000px){.characters.four{grid-template-columns:repeat(4,1fr)}.four .portrait{height:230px}}
+@media(max-width:850px){.hero-inner{gap:30px;grid-template-columns:1.2fr 1fr}.section-head{display:block}.section-head>p{margin-top:12px;max-width:none}.region-grid{grid-template-columns:repeat(2,1fr)}.characters{grid-template-columns:repeat(2,1fr)}.party-intro{display:block}.party-intro p{margin-top:8px}.world-grid{gap:20px}}
+@media(max-width:600px){html{scroll-padding-top:135px}.wrap{padding:0 20px}.nav{display:block;padding-top:15px;padding-bottom:10px}.brand{font-size:19px}.brand small{display:none}.menu{gap:26px;font-size:14px;margin-top:6px}.hero{padding:42px 0}.hero-inner{grid-template-columns:1fr;gap:30px}.hero h1{font-size:48px}.ledger{padding:22px}.ledger h2{margin:12px 0}.ledger .foot{margin-top:15px}.section{padding:48px 0}.world-grid,.region-grid,.characters{grid-template-columns:1fr}.world-grid{gap:28px}.section-head{margin-bottom:24px}h2{font-size:29px}.portrait{height:300px}.character p{min-height:0}.party-controls{gap:6px}.party-controls button{padding:9px 13px;font-size:14px}.footer-inner{display:block}.footer-inner p+ p{margin-top:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.subheading{font-size:23px;margin:42px 0 20px}.race-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.race-grid article{border:1px solid var(--line);padding:20px}.race-grid h4{font-size:19px;margin:0 0 8px;color:var(--gold)}.race-grid p,.grade-note{color:var(--muted)}.grades{padding:0;list-style:none;display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);margin:0 0 18px}.grades li{padding:16px;text-align:center}.grades span{display:block;font-size:14px;color:var(--muted)}.grade-note{font-size:15px}.card-trigger{display:block;width:100%;padding:0;border:0;text-align:left;color:inherit;background:transparent}.card-trigger .character-body,.card-trigger .meta,.card-trigger .name,.card-trigger .description,.card-trigger .tags{display:block}.card-trigger .name{font-size:25px;font-weight:600;margin:6px 0 12px}.card-trigger .description{color:var(--muted);min-height:86px}.card-trigger .tags{display:flex}.card-trigger[aria-expanded=true]{box-shadow:inset 0 0 0 2px var(--gold)}.card-trigger:hover .name{color:var(--gold)}.card-trigger:focus-visible{outline-offset:-4px}.expand-hint{display:flex;justify-content:space-between;color:var(--gold);font-size:14px;border-top:1px solid var(--line);padding-top:16px;margin-top:22px}.expand-mark{font-size:20px;line-height:1}.profile-drawer{grid-column:1/-1;background:#1b3028;border:1px solid #d6b77d66;overflow:hidden}.profile-drawer[hidden]{display:none}.drawer-inner{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:32px}.drawer-heading{display:flex;justify-content:space-between;align-items:start;gap:20px}.drawer-heading h4{font-size:27px;margin:5px 0 14px}.drawer-close{background:transparent;color:var(--gold);border:1px solid var(--line);padding:5px 12px;font-size:14px;min-height:44px}.profile-facts{color:var(--muted);margin:15px 0}.profile-facts div{padding:7px 0}.profile-facts dt{display:inline;color:var(--gold);margin-right:16px}.profile-facts dd{display:inline;margin:0}.radar{margin:0;min-width:0;text-align:center}.radar svg{width:100%;max-width:360px;height:auto;display:block;margin:auto}.radar figcaption{font-size:14px;color:var(--muted)}.stat-values{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0;list-style:none;font-size:14px;color:var(--muted);margin-top:22px}.stat-values li{border-top:1px solid var(--line);padding-top:8px}.stat-values b{color:var(--text);margin-left:10px}.stat-notice{font-size:14px;color:var(--muted);margin-top:12px}
+@media(max-width:850px){.race-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.race-grid{grid-template-columns:1fr}.grades{grid-template-columns:repeat(3,1fr)}.grades li{padding:12px 8px}.drawer-inner{grid-template-columns:1fr;gap:12px;padding:20px}.card-trigger .description{min-height:0}.stat-values{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip">본문으로 건너뛰기</a>
+<header class="top"><div class="wrap nav"><a class="brand" href="#">CARDIEN <small>ADVENTURERS’ GUILD</small></a><nav class="menu" aria-label="주 메뉴"><a href="#world">세계관</a><a href="#regions">지역 소개</a><a href="#parties">등장인물</a></nav></div></header>
+<main id="main">
+<section class="hero" aria-labelledby="title"><div class="wrap"><div class="hero-inner"><div><p class="eyebrow">The Western Frontier · Cardien Saga</p><h1 id="title">서부 변경,<br><span>모험의 기록.</span></h1><p class="intro">도시의 길목에서 오래된 유적까지.<br>서로 다른 목적을 품은 모험가들이 카르디엔의 서부로 모여든다.</p><a class="jump" href="#parties">모험가 명부 펼치기 ↗</a></div><aside class="ledger" aria-label="안내"><p class="eyebrow">Guild Archive <span class="draft">초안</span></p><h2>서부 모험가 길드</h2><dl><div><dt>소속 세계</dt><dd>카르디엔 연합왕국</dd></div><div><dt>활동 무대</dt><dd>서부 변경</dd></div><div><dt>기록</dt><dd>세계 · 지역 · 모험가</dd></div></dl><p class="foot">도시를 떠나는 이들과 돌아오는 이들.<br>그들의 이야기가 이곳에서 교차한다.</p></aside></div><div id="hero-media"></div></div></section>
+<section class="section" id="world"><div class="wrap"><div class="section-head"><div class="section-title"><span class="number">01</span><h2>하나의 왕국, 여러 삶</h2></div><p>인간과 엘프, 수인과 거인.<br>서로 다른 문화와 힘이 공존하는 카르디엔.</p></div><div class="world-grid" id="world-grid"></div><h3 class="subheading">종족과 힘의 전통</h3><div class="race-grid" id="race-grid"></div><h3 class="subheading">모험가 등급</h3><ol class="grades"><li>🔰 <b>초급</b><span>임시등급</span></li><li>🥉 <b>하급</b><span>정식등급</span></li><li>🥈 <b>중급</b><span>정식등급</span></li><li>🥇 <b>상급</b><span>정식등급</span></li><li>✨ <b>특급</b><span>명예직</span></li></ol><p class="grade-note">초급은 첫 임무 완수 후 심사를 거쳐 정식 등급을 부여받는다. 특급은 큰 공로를 인정받은 명예직으로, 상급 이상의 대우를 받는다.</p></div></section>
+<section class="section paper" id="regions"><div class="wrap"><div class="section-head"><div class="section-title"><span class="number">02</span><h2>서부를 걷는 이들에게</h2></div><p>모험의 거점이 되는 도시와 길목,<br>그리고 오래된 전쟁의 흔적.</p></div><div class="region-grid" id="region-grid"></div></div></section>
+<section class="section" id="parties"><div class="wrap"><div class="section-head"><div class="section-title"><span class="number">03</span><h2>모험가 명부</h2></div><p>같은 길을 걸어도, 목적은 저마다 다르다.<br>인물 카드를 누르면 능력치를 펼쳐볼 수 있다.</p></div><div class="party-controls" id="party-controls" role="group" aria-label="소개할 파티 선택"></div><div id="party-content" aria-live="polite" aria-atomic="false"></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><p><b>CARDIEN SAGA</b> · 서부 모험가 길드</p><p>세계관 · 지역 · 등장인물 소개</p></div></footer>
+<noscript>등장인물과 지역 소개를 보려면 브라우저의 JavaScript를 활성화해 주세요.</noscript>
+<!-- 편집 영역: 이름, 소개글, 파티 소속, 이미지 경로는 아래 JSON에서 수정합니다.
+assetBase: 현재 테스트용 로컬 경로. R2 업로드 후 r2AssetBase 값으로 교체. image: 버킷 내부 경로 또는 https 전체 URL.
+빈 image는 의도적으로 이미지 없이 표시합니다. 기존 아카데미 에셋을 재사용하지 않습니다. -->
+<script id="site-data" type="application/json">
+{
+  "assetBase": "./assets/map",
+  "heroImage": "07.webp",
+  "world": [
+    {
+      "label": "THE KINGDOM",
+      "title": "카르디엔 연합왕국",
+      "description": "인간과 엘프, 수인과 거인족이 저마다의 문화와 힘을 지니고 살아가는 연합왕국."
+    },
+    {
+      "label": "THE WESTERN FRONTIER",
+      "title": "전쟁의 흔적이 남은 변경",
+      "description": "마족과의 국지전이 잦았고, 과거 대전쟁이 벌어졌던 땅. 전략적 이점이 적어 상대적으로 치안이 허술하며, 모험가의 손길을 필요로 하는 일이 많다."
+    },
+    {
+      "label": "THE PARTIES",
+      "title": "각자의 길을 걷는 모험가들",
+      "description": "세 파티는 저마다의 장점과 약점, 성향을 지닌다. 각자 의뢰와 탐사, 휴식과 교류를 이어가며 협력과 경쟁, 친분과 악연을 쌓아간다."
+    }
+  ],
+  "regions": [
+    {
+      "direction": "거점 · 서부 중앙",
+      "name": "베르겐하임",
+      "description": "서부 중앙의 교역도시. 모험가 활동의 중심이 되는 거점.",
+      "image": "01.webp"
+    },
+    {
+      "direction": "동쪽 · 길목",
+      "name": "해오름골",
+      "description": "동부로 가는 길목에 자리한 작은 마을.",
+      "image": "02.webp"
+    },
+    {
+      "direction": "북쪽 · 길목",
+      "name": "헤르반",
+      "description": "북부로 향하는 길목의 소도시.",
+      "image": "03.webp"
+    },
+    {
+      "direction": "서쪽 · 옛 전장",
+      "name": "부러진 창 벌판",
+      "description": "서쪽의 오래된 대전쟁터. 인근에는 이 전쟁과 무관한 고대 유적, 침묵의 폐허가 있다.",
+      "image": "04.webp"
+    },
+    {
+      "direction": "남쪽 · 항구",
+      "name": "벨마르",
+      "description": "서부 남쪽의 항구도시.",
+      "image": "05.webp"
+    },
+    {
+      "direction": "서쪽 · 위험지역",
+      "name": "침묵의 폐허",
+      "description": "유래를 알 수 없는 고대 유적. 마물이 대거 출현하는 위험지역.",
+      "image": "06.webp"
+    }
+  ],
+  "parties": [
+    {
+      "id": "main",
+      "name": "이름 미정",
+      "description": "화력에 몰두하는 마법사, 정석을 고집하는 검사, 퇴로부터 챙기는 도적. 서로 다른 방식으로 첫걸음을 내딛는 초급 모험가들.",
+      "members": [
+        {
+          "name": "루루",
+          "race": "수인(페넥)",
+          "gender": "여성",
+          "age": "20",
+          "job": "마법사",
+          "grade": "초급",
+          "gradeIcon": "🔰",
+          "meta": "수인(페넥) · 마법사 · 🔰 초급",
+          "description": "위험한 마법과 유물에 눈을 빛내는 마법사. 문제를 만나면 우선 화력으로 해결하려 한다.",
+          "role": "공격마법 · 유물 탐구",
+          "tags": [
+            "무표정",
+            "마이페이스",
+            "화력광"
+          ],
+          "image": "https://cc.iutcoder.com/24/A/01.webp",
+          "stats": [
+            1,
+            2,
+            1,
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "name": "에르나",
+          "race": "엘프",
+          "gender": "여성",
+          "age": "23",
+          "job": "검사",
+          "grade": "초급",
+          "gradeIcon": "🔰",
+          "meta": "엘프 · 검사 · 🔰 초급",
+          "description": "정석 검술을 고집하는 성실한 전위. 동료를 지키는 자리에서도 공격할 기회를 먼저 찾는다.",
+          "role": "전위 · 검술 · 위기 대응",
+          "tags": [
+            "정직",
+            "책임감",
+            "승부욕"
+          ],
+          "image": "https://cc.iutcoder.com/24/B/01.webp",
+          "stats": [
+            3,
+            3,
+            3,
+            1,
+            4,
+            2
+          ]
+        },
+        {
+          "name": "네라",
+          "race": "인간",
+          "gender": "여성",
+          "age": "22",
+          "job": "도적",
+          "grade": "초급",
+          "gradeIcon": "🔰",
+          "meta": "인간 · 도적 · 🔰 초급",
+          "description": "위험과 비용에 민감한 현실주의자. 불평하면서도 퇴로와 필요한 물자를 빠짐없이 챙긴다.",
+          "role": "정찰 · 함정 해제 · 물자 관리",
+          "tags": [
+            "의심",
+            "눈치",
+            "생존본능"
+          ],
+          "image": "https://cc.iutcoder.com/24/C/01.webp",
+          "stats": [
+            1,
+            4,
+            2,
+            1,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elite",
+      "name": "백은의 왕관",
+      "description": "지휘와 고위마법, 신성술과 궁술을 갖춘 파티. 성과와 실력을 바라보는 시선은 동료 사이에서도 저마다 다르다.",
+      "members": [
+        {
+          "name": "카일",
+          "race": "인간",
+          "gender": "남성",
+          "age": "27",
+          "job": "전사",
+          "grade": "상급",
+          "gradeIcon": "🥇",
+          "meta": "인간 · 전사 · 🥇 상급",
+          "description": "실력과 성과를 중시하는 리더. 신참에게 엄격하지만 증명된 실력은 공정하게 인정한다.",
+          "role": "지휘 · 전위 · 전황 판단",
+          "tags": [
+            "자기확신",
+            "실력주의",
+            "책임감"
+          ],
+          "image": "https://cc.iutcoder.com/24/D/01.webp",
+          "stats": [
+            5,
+            3,
+            5,
+            1,
+            4,
+            4
+          ]
+        },
+        {
+          "name": "오스왈드",
+          "race": "인간",
+          "gender": "남성",
+          "age": "24",
+          "job": "마법사",
+          "grade": "상급",
+          "gradeIcon": "🥇",
+          "meta": "인간 · 마법사 · 🥇 상급",
+          "description": "미지의 마법을 분석하는 탐구자. 근거 없는 확신에는 날카로운 지적을 아끼지 않는다.",
+          "role": "고위마법 · 고대마법 해석",
+          "tags": [
+            "분석적",
+            "냉소적",
+            "완벽주의"
+          ],
+          "image": "https://cc.iutcoder.com/24/E/01.webp",
+          "stats": [
+            1,
+            2,
+            2,
+            5,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "마리아",
+          "race": "인간",
+          "gender": "여성",
+          "age": "24",
+          "job": "수녀",
+          "grade": "중급",
+          "gradeIcon": "🥈",
+          "meta": "인간 · 수녀 · 🥈 중급",
+          "description": "온화한 치유자이자 중재자. 부상과 무리한 희생 앞에서는 단호하게 동료를 멈춰 세운다.",
+          "role": "신성술 · 치유 · 해주",
+          "tags": [
+            "친절",
+            "공감",
+            "단호함"
+          ],
+          "image": "https://cc.iutcoder.com/24/F/01.webp",
+          "stats": [
+            1,
+            2,
+            3,
+            4,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "엘리아",
+          "race": "엘프",
+          "gender": "여성",
+          "age": "20대 후반",
+          "job": "궁수",
+          "grade": "상급",
+          "gradeIcon": "🥇",
+          "meta": "엘프 · 궁수 · 🥇 상급",
+          "description": "말보다 행동을 살피는 과묵한 궁수. 불필요한 갈등은 피하고, 판단을 마치면 빠르게 움직인다.",
+          "role": "궁술 · 정찰 · 추적",
+          "tags": [
+            "관찰적",
+            "신중",
+            "독립적"
+          ],
+          "image": "https://cc.iutcoder.com/24/G/01.webp",
+          "stats": [
+            2,
+            5,
+            3,
+            2,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beastkin",
+      "name": "수월방(獸月幇)",
+      "description": "도검과 정령술, 궁술과 권법으로 호흡을 맞추는 수인 파티. 동방의 문화와 각자의 전투 방식을 함께 지닌다.",
+      "members": [
+        {
+          "name": "하진",
+          "race": "수인(백호)",
+          "gender": "남성",
+          "age": "29",
+          "job": "전사",
+          "grade": "상급",
+          "gradeIcon": "🥇",
+          "meta": "수인(백호) · 전사 · 🥇 상급",
+          "description": "허세보다 행동을 믿는 리더. 자신의 문화에 자부심을 지니고 동료와 판단에 책임을 진다.",
+          "role": "도검 · 공격형 전위 · 동료 보호",
+          "tags": [
+            "과묵",
+            "강직",
+            "실전주의"
+          ],
+          "image": "https://cc.iutcoder.com/24/H/01.webp",
+          "stats": [
+            5,
+            4,
+            4,
+            1,
+            5,
+            4
+          ]
+        },
+        {
+          "name": "츠네",
+          "race": "수인(여우)",
+          "gender": "여성",
+          "age": "27",
+          "job": "무녀",
+          "grade": "중급",
+          "gradeIcon": "🥈",
+          "meta": "수인(여우) · 무녀 · 🥈 중급",
+          "description": "느긋한 미소 뒤에 날카로운 말솜씨를 감춘 무녀. 정령술과 수인 문화에 강한 자부심을 지녔다.",
+          "role": "정령술 · 공격마법 · 치유와 보조",
+          "tags": [
+            "영리",
+            "짓궂음",
+            "자존심"
+          ],
+          "image": "https://cc.iutcoder.com/24/I/01.webp",
+          "stats": [
+            1,
+            3,
+            2,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "name": "린",
+          "race": "수인(쥐)",
+          "gender": "여성",
+          "age": "23",
+          "job": "궁수",
+          "grade": "중급",
+          "gradeIcon": "🥈",
+          "meta": "수인(쥐) · 궁수 · 🥈 중급",
+          "description": "뛰어난 청각으로 위험을 살피는 신중한 궁수. 정면충돌보다 퇴로와 실제 상황을 먼저 본다.",
+          "role": "궁술 · 정찰 · 매복 탐지",
+          "tags": [
+            "신중",
+            "관찰력",
+            "경계심"
+          ],
+          "image": "https://cc.iutcoder.com/24/J/01.webp",
+          "stats": [
+            1,
+            4,
+            2,
+            2,
+            4,
+            4
+          ]
+        },
+        {
+          "name": "호연",
+          "race": "수인(곰)",
+          "gender": "남성",
+          "age": "20",
+          "job": "권사",
+          "grade": "하급",
+          "gradeIcon": "🥉",
+          "meta": "수인(곰) · 권사 · 🥉 하급",
+          "description": "빠른 움직임과 기술로 빈틈을 파고드는 권사. 장난스럽게 상대를 도발해도 실전에서는 침착하다.",
+          "role": "근접격투 · 속도 · 급소 공략",
+          "tags": [
+            "쾌활",
+            "대담",
+            "승부욕"
+          ],
+          "image": "https://cc.iutcoder.com/24/K/01.webp",
+          "stats": [
+            3,
+            5,
+            3,
+            1,
+            4,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "statAxes": [
+    "완력",
+    "기동",
+    "내구",
+    "마력",
+    "기교",
+    "통찰"
+  ],
+  "statMax": 5,
+  "races": [
+    {
+      "name": "엘프",
+      "description": "마법과 정밀한 마력 제어에 강하다. 전사 계열은 대체로 기피한다."
+    },
+    {
+      "name": "수인",
+      "description": "뛰어난 신체 능력과 자연 친화, 정령 소환이 특징. 동방 계열의 문화를 지닌다."
+    },
+    {
+      "name": "거인족",
+      "description": "전사형 종족. 강한 신체와 룬 마법에 특화되어 있다."
+    },
+    {
+      "name": "인간",
+      "description": "균형 잡힌 능력과 빠른 적응력이 강점이다."
+    }
+  ],
+  "r2AssetBase": "https://cc.iutcoder.com/24/map"
+}
+</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('site-data').textContent);
+function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;}
+function imageURL(path){if(!path)return null;if(data.previewAssets&&data.previewAssets[path])return data.previewAssets[path];try{const base=data.assetBase?new URL(data.assetBase.replace(/\/$/,'')+'/',document.baseURI).href:document.baseURI;const url=new URL(path,base);return ['https:','http:','file:'].includes(url.protocol)?url.href:null;}catch{return null;}}
+function addImage(parent,path,alt,cls){const url=imageURL(path);if(!url)return;const img=el('img',cls);img.alt=alt;img.loading=cls==='hero-banner'?'eager':'lazy';img.decoding='async';img.addEventListener('error',()=>img.remove(),{once:true});img.src=url;parent.append(img);}
+addImage(document.getElementById('hero-media'),data.heroImage,'모험가 길드 내부','hero-banner');
+for(const item of data.world){const card=el('article','world-card');card.append(el('span','small',item.label),el('h3','',item.title),el('p','',item.description));document.getElementById('world-grid').append(card);}
+for(const item of data.regions){const card=el('article','region');addImage(card,item.image,item.name);const body=el('div','region-body');body.append(el('span','direction',item.direction),el('h3','',item.name),el('p','',item.description));card.append(body);document.getElementById('region-grid').append(card);}
+for(const race of data.races){const card=el('article');card.append(el('h4','',race.name),el('p','',race.description));document.getElementById('race-grid').append(card);}
+function svgEl(tag,attrs,text){const n=document.createElementNS('http://www.w3.org/2000/svg',tag);for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);if(text!==undefined)n.textContent=text;return n;}
+function validStats(member){return Array.isArray(member.stats)&&member.stats.length===6&&member.stats.every(v=>typeof v==='number'&&Number.isFinite(v)&&v>=0&&v<=data.statMax);}
+function makeRadar(member){
+ const figure=el('figure','radar'),ready=validStats(member),svg=svgEl('svg',{viewBox:'0 0 360 340',role:'img','aria-label':ready?member.name+' 능력치: '+data.statAxes.map((a,i)=>a+' '+member.stats[i]).join(', '):member.name+' 능력치 미설정. 임시 축: '+data.statAxes.join(', ')});
+ const point=(i,r)=>[180+Math.cos(-Math.PI/2+i*Math.PI/3)*r,166+Math.sin(-Math.PI/2+i*Math.PI/3)*r];
+ const points=r=>Array.from({length:6},(_,i)=>point(i,r).join(',')).join(' ');
+ for(let level=1;level<=5;level++)svg.append(svgEl('polygon',{points:points(106*level/5),fill:'none',stroke:level===5?'#d6b77d88':'#b8c2b833','stroke-width':1}));
+ data.statAxes.forEach((axis,i)=>{const [x,y]=point(i,106);svg.append(svgEl('line',{x1:180,y1:166,x2:x,y2:y,stroke:'#b8c2b833'}));const [tx,ty]=point(i,139);svg.append(svgEl('text',{x:tx,y:ty+5,'text-anchor':'middle',fill:'#e8e4d6','font-size':16},axis));});
+ if(ready){svg.append(svgEl('polygon',{points:member.stats.map((v,i)=>point(i,106*v/data.statMax).join(',')).join(' '),fill:'#d6b77d40',stroke:'#e0bd7a','stroke-width':2}));member.stats.forEach((v,i)=>{const [cx,cy]=point(i,106*v/data.statMax);svg.append(svgEl('circle',{cx,cy,r:3,fill:'#ead1a4'}));});}
+ else svg.append(svgEl('text',{x:180,y:171,'text-anchor':'middle',fill:'#b8c2b8','font-size':16},'수치 미설정'));
+ figure.append(svg,el('figcaption','',ready?'능력치 · 공통 척도 0–'+data.statMax:'평가 항목은 임시안 · 수치는 추후 반영'));return figure;
+}
+let disposeParty=()=>{};
+function renderParty(party){
+ disposeParty();const root=document.getElementById('party-content');root.replaceChildren();
+ const intro=el('div','party-intro');intro.append(el('h3','',party.name),el('p','',party.description));
+ const grid=el('div','characters'+(party.members.length===4?' four':'')),drawer=el('section','profile-drawer');drawer.id='profile-drawer';drawer.hidden=true;drawer.setAttribute('aria-label','인물 능력치');
+ let selected=-1,serial=0;const cards=[],buttons=[];
+ const positionDrawer=()=>{if(selected<0)return;const count=getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length;const last=Math.min(Math.floor(selected/count)*count+count-1,cards.length-1);cards[last].after(drawer);};
+ const setExpanded=index=>buttons.forEach((b,i)=>{b.setAttribute('aria-expanded',String(index===i));b.querySelector('.expand-mark').textContent=index===i?'−':'+';b.querySelector('.expand-label').textContent=index===i?'능력치 접기':'능력치 펼치기';});
+ const close=()=>{const token=++serial;const index=selected;selected=-1;setExpanded(-1);drawer.getAnimations().forEach(a=>a.cancel());drawer.inert=true;if(matchMedia('(prefers-reduced-motion: reduce)').matches){drawer.hidden=true;return;}const animation=drawer.animate([{height:drawer.offsetHeight+'px',opacity:1},{height:'0px',opacity:0}],{duration:220,easing:'ease-in'});animation.finished.then(()=>{if(token===serial)drawer.hidden=true;}).catch(()=>{});};
+ const open=index=>{if(selected===index){close();return;}++serial;drawer.getAnimations().forEach(a=>a.cancel());selected=index;setExpanded(index);const member=party.members[index];drawer.replaceChildren();drawer.inert=false;const inside=el('div','drawer-inner'),info=el('div'),heading=el('div','drawer-heading'),headText=el('div');headText.append(el('p','eyebrow','Adventurer Profile'),el('h4','',member.name));const closeButton=el('button','drawer-close','접기');closeButton.type='button';closeButton.setAttribute('aria-label',member.name+' 능력치 접기');closeButton.addEventListener('click',()=>{buttons[index].focus();close();});heading.append(headText,closeButton);info.append(heading);
+ const facts=el('dl','profile-facts');for(const [label,value]of [['신상',member.race+' · '+member.gender+' · '+member.age+(member.age.includes('대')?'':'세')],['등급',member.gradeIcon+' '+member.grade],['역할',member.role],['성향',member.tags.join(' · ')]]){const row=el('div');row.append(el('dt','',label),el('dd','',value));facts.append(row);}info.append(facts);
+ const values=el('ul','stat-values');data.statAxes.forEach((axis,i)=>{const li=el('li','',axis);li.append(el('b','',validStats(member)?String(member.stats[i])+' / '+data.statMax:'—'));values.append(li);});info.append(values);if(!validStats(member))info.append(el('p','stat-notice','수치가 정해지면 육각형 그래프에 표시됩니다.'));inside.append(info,makeRadar(member));drawer.append(inside);positionDrawer();drawer.hidden=false;if(!matchMedia('(prefers-reduced-motion: reduce)').matches)drawer.animate([{height:'0px',opacity:0},{height:drawer.scrollHeight+'px',opacity:1}],{duration:320,easing:'ease-out'});
+ };
+ party.members.forEach((member,i)=>{const card=el('article','character'),button=el('button','card-trigger');button.type='button';button.setAttribute('aria-expanded','false');button.setAttribute('aria-controls','profile-drawer');button.setAttribute('aria-label',member.name+' 프로필과 능력치');button.addEventListener('click',()=>open(i));const media=el('span','portrait'),initial=el('span','initial',member.name.slice(0,1));initial.setAttribute('aria-hidden','true');media.append(initial,el('span','entry','ADVENTURER / '+String(i+1).padStart(2,'0')));addImage(media,member.image,member.name);const body=el('span','character-body');body.append(el('span','meta',member.meta),el('span','name',member.name),el('span','description',member.description));const hint=el('span','expand-hint');hint.append(el('span','expand-label','능력치 펼치기'),el('span','expand-mark','+'));body.append(hint);button.append(media,body);card.append(button);cards.push(card);buttons.push(button);grid.append(card);});
+ grid.append(drawer);root.append(intro,grid);document.querySelectorAll('[data-party]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.party===party.id)));
+ window.addEventListener('resize',positionDrawer);disposeParty=()=>{++serial;window.removeEventListener('resize',positionDrawer);drawer.getAnimations().forEach(a=>a.cancel());};
+}
+for(const party of data.parties){const button=el('button','',party.name);button.type='button';button.dataset.party=party.id;button.setAttribute('aria-controls','party-content');button.setAttribute('aria-pressed','false');button.addEventListener('click',()=>renderParty(party));document.getElementById('party-controls').append(button);}
+if(data.parties.length)renderParty(data.parties[0]);
+</script>
+</body></html>
