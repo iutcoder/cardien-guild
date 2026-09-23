@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10201c">
+<meta name="description" content="카르디엔 서부 모험가 길드의 프롤로그 웹툰.">
+<title>프롤로그 웹툰 | 카르디엔 사가</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:#0b1512;color:#f0eee5;font:16px/1.6 system-ui,-apple-system,"Noto Sans KR",sans-serif}a{color:#d6b77d;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid #d6b77d;outline-offset:4px}.bar{position:sticky;top:0;z-index:1;background:#10201cf5;border-bottom:1px solid #ffffff24}.bar-inner{max-width:1000px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}h1{font-size:18px;font-weight:600;margin:0}.back{font-size:14px;padding:8px 0}.reader{max-width:1000px;margin:auto}.comic{display:block;width:100%;height:auto}.notice{padding:24px;text-align:center;color:#b8c2b8}.notice[hidden]{display:none}.notice p{margin:0 0 16px}.notice a{display:inline-block;margin:0 8px}.foot{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;padding:32px 20px 48px;border-top:1px solid #ffffff24}.skip{position:fixed;top:-100px;left:12px;padding:10px;background:#10201c;z-index:10}.skip:focus{top:12px}@media(max-width:400px){.bar-inner{padding:10px 14px;gap:10px}h1{font-size:16px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#reader">웹툰으로 건너뛰기</a>
+<header class="bar"><div class="bar-inner"><a class="back" href="../index.html">← 길드 홈페이지</a><h1>프롤로그 웹툰</h1></div></header>
+<main class="reader" id="reader" aria-label="프롤로그 웹툰">
+<div id="load-error" class="notice" role="alert" hidden><p>웹툰 이미지를 불러오지 못했습니다.</p><a href="">다시 시도</a><a href="https://cc.iutcoder.com/24/toon.webp" target="_blank" rel="noopener">원본 이미지 열기</a></div>
+<img id="comic" class="comic" src="https://cc.iutcoder.com/24/toon.webp" width="1000" height="16000" alt="카르디엔 서부 모험가 길드 프롤로그 웹툰" fetchpriority="high" decoding="async">
+</main>
+<footer class="foot"><a href="#top">맨 위로 ↑</a><a href="../index.html">길드 홈페이지로 돌아가기</a></footer>
+<script>
+const comic=document.getElementById('comic');
+function showError(){document.getElementById('load-error').hidden=false;comic.hidden=true;comic.style.display='none';}
+comic.addEventListener('error',showError);
+if(comic.complete&&comic.naturalWidth===0)showError();
+</script>
+</body>
+</html>
